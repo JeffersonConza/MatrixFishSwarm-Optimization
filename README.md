@@ -1,49 +1,50 @@
-# MatrixFishSwarm-Optimization
+# MatrixFishSwarm-Optimization 🐟🤖
 
-!Bienvenidos al proyecto de optimizacion bioinspirada basado en el **Fish Swarm Algorithm (FSA)**! ????
+Optimización bioinspirada con el algoritmo Fish Swarm en un entorno simulado tipo *Matrix*.
 
-Este repositorio implementa el **Fish Swarm Algorithm (FSA)**, un algoritmo de optimizacion bioinspirado en el comportamiento colectivo de bancos de peces en busca de alimento. Es una alternativa robusta y versatil frente a otros enfoques evolutivos para resolver problemas complejos de optimizacion.
+¡Bienvenidos al proyecto de optimización basado en el **Fish Swarm Algorithm (FSA)**! Este repositorio implementa una simulación inspirada en el universo de *Matrix*, donde centinelas patrullan un entorno dinámico y lleno de niebla para localizar y neutralizar aerodeslizadores humanos.
 
-## Descripcion
+---
 
-Este proyecto tiene como objetivo modelar y optimizar el comportamiento de enjambres de centinelas (inspirados en peces) para localizar y neutralizar **aerodeslizadores** en un entorno dinamico y lleno de niebla. Usando el algoritmo **Fish Swarm Algorithm (FSA)**, los centinelas trabajan en conjunto siguiendo comportamientos de **busqueda**, **agrupamiento**, **seguimiento** y **aleatorio**.
+## 🧠 Descripción
 
-Inspirado por el universo de *Matrix*, donde los centinelas patrullan la zona en busca de naves humanas, este proyecto adapta el algoritmo FSA para crear una simulacion donde los centinelas buscan y neutralizan a los aerodeslizadores. Este enfoque se utiliza para resolver problemas de optimizacion complejos a traves de una inteligencia colectiva inspirada en la naturaleza.
+El **Fish Swarm Algorithm (FSA)** es un algoritmo de optimización bioinspirado en el comportamiento colectivo de bancos de peces. En esta simulación, los centinelas (inspirados en peces) se comportan según cuatro patrones:
 
-## Tipos de comportamiento:
+- **Búsqueda individual**
+- **Agrupamiento**
+- **Seguimiento**
+- **Movimiento aleatorio**
 
-1. **Busqueda individual**: Cada pez explora su entorno inmediato en busca de soluciones mejores.
-2. **Agrupamiento**: Los peces se acercan a regiones donde sus vecinos han encontrado mejores soluciones, siempre que estas no esten sobrepobladas.
-3. **Seguimiento**: Si un pez encuentra una zona con una mejora significativa, es seguido por otros miembros del banco.
-4. **Aleatorio**: Cuando no hay mejora, los centinelas se mueven de manera aleatoria.
+El objetivo es neutralizar todos los aerodeslizadores mediante inteligencia colectiva.
 
-> ?? **Limitacion**: Algunos peces pueden quedarse atrapados en optimos locales.  
-> ?? **Mejora**: Una version mejorada del algoritmo permite compartir informacion global entre todos los peces para mejorar la exploracion del espacio.
+---
 
-## Comportamientos Principales:
+## 🎮 Cómo Funciona
 
-- **Busqueda (Presa)**: Los centinelas buscan de forma individual el aerodeslizador mas cercano.
-- **Agrupamiento (Enjambre)**: Los centinelas se agrupan alrededor de los mejores puntos (aerodeslizadores reales).
-- **Seguimiento**: Los centinelas siguen a aquellos con mejores hallazgos.
-- **Aleatorio**: Cuando no hay mejora, los centinelas se mueven de manera aleatoria.
+- El mapa está dividido en una cuadrícula de **10x10 km** con niebla densa.
+- Hay **30 centinelas** patrullando aleatoriamente.
+- **4 aerodeslizadores** están distribuidos aleatoriamente (uno es señuelo).
+- Se considera neutralizado un aerodeslizador cuando **≥10 centinelas** lo rodean.
 
-## Como Funciona
+---
 
-1. El mapa esta dividido en **10x10 km** con una niebla densa que limita la visibilidad.
-2. Hay **30 centinelas** patrullando aleatoriamente.
-3. **4 aerodeslizadores** estan distribuidos aleatoriamente, uno de los cuales es un senuelo (de bajo valor).
-4. El objetivo es **neutralizar** todos los aerodeslizadores mediante el comportamiento de enjambre, agrupando a al menos 10 centinelas en torno a cada uno.
+## 🐟 Comportamientos del Enjambre
 
-## Aplicaciones
+| Comportamiento     | Descripción                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| Búsqueda           | Exploración individual en busca de soluciones mejores.                      |
+| Agrupamiento       | Acercamiento a regiones con buenos resultados, evitando sobrepoblación.     |
+| Seguimiento        | Imitación de peces exitosos en zonas de mejora significativa.               |
+| Aleatorio          | Movimiento aleatorio cuando no hay mejora detectada.                        |
 
-- Optimizacion numerica
-- Entrenamiento de redes neuronales
-- Planificacion y logistica
-- Seleccion de caracteristicas
-- Ajuste de hiperparametros
+> ⚠️ *Limitación*: Algunos peces pueden quedar atrapados en óptimos locales.  
+> 🚀 *Mejora*: Se incluye una versión con comunicación global para mejorar la exploración.
 
-## Instalacion
+---
+
+## 📦 Instalación
 
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu_usuario/MatrixFishSwarm-Optimization.git
+   cd MatrixFishSwarm-Optimization
